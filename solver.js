@@ -937,7 +937,7 @@ class Solver {
                             rect(startX + spaceBetween * j, startY + heightInterval * (this.pastNumbers.length - 1), 20, 30);
                         }
                     } else if (solveState === 2) {
-                        this.ansString = this.ansString + ' = ' + this.findHCF();
+                        this.ansString = this.ansString + ' = ' + this.findLCM();
                         this.finishButton.show();
                         if (this.finishButton.amPressed() ) {
                             this.finished = true;
