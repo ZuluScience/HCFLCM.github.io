@@ -830,6 +830,9 @@ class Solver {
                 }
                 let array = numbers.slice();
                 this.pastNumbers.push(array);
+                if (Math.max.apply(null, numbers) < prime) {
+                    break;
+                }
             }
         }
         this.factors = factors.slice();
